@@ -38,7 +38,7 @@ class _CheckBoxSetStateScreenState extends State<CheckBoxSetStateScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Drinks tonight",
+                    "飲み物を選択して下さい",
                     style: Theme.of(context).textTheme.headline4,
                   ),
                   ...drinks
