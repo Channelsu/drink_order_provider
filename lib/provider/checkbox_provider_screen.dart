@@ -38,7 +38,7 @@ class _CheckboxProviderScreenState extends State<CheckboxProviderScreen> {
                       "飲み物を選んで下さい",
                       style: Theme.of(context).textTheme.headline4,
                     ),
-                    // TODO 9: Receive the drinks from the provider
+                    // TODO 9: プロバイダーからゲッターで_deinksを取得
                     ...drinksProvider.drinks
                         .map(
                           (drink) => DrinksWidget(
