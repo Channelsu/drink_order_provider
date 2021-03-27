@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       // TODO 5: ChangeNotifierProviderで覆う
       // TODO 6: createプロパティを追加。DrinksProviderのインスタンスを生成
       home: ChangeNotifierProvider(
-        create: (_) => DrinkProvider(),
+        create: (_) => DrinksProvider(),
         child: CheckBoxSetStateScreen()
       ),
     );

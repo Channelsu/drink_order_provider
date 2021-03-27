@@ -8,7 +8,7 @@ import 'package:drinkorderprovider/models/drink.dart';
 // TODO 10: Implement the selectDrink method
 // TODO 12: Implement a getter function for selected Drinks
 
-class DrinkProvider extends ChangeNotifier {
+class DrinksProvider extends ChangeNotifier {
   // 外から変更されてはいけないのでプライベート化
   List<Drink> _drinks = [
     Drink("水", false),
