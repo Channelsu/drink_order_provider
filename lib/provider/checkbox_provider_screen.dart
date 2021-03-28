@@ -58,16 +58,12 @@ class _CheckboxProviderScreenState extends State<CheckboxProviderScreen> {
                       child: ListView.builder(
                         itemBuilder: (context, index) => ListTile(
                           title: Text(
-                            // TODO 13.1: get the selectedDrinks from the provider
-                            drinks
-                                .where((element) => element.selected)
-                                .toList()[index]
-                                .name,
+                            // TODO 13.1: プロバイダーから選択されたドリンクを取得
+                            drinksProvider.selectedDrinks[index].name,
                           ),
                         ),
-                        // TODO 13.2: get the selectedDrinks from the provider
-                        itemCount:
-                            drinks.where((element) => element.selected).length,
+                        // TODO 13.2: プロバイダーから選択されたドリンクを取得
+                        itemCount: drinksProvider.selectedDrinks.length,
                       ),
                     ),
                   ],
