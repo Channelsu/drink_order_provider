@@ -44,7 +44,8 @@ class _CheckboxProviderScreenState extends State<CheckboxProviderScreen> {
                           (drink) => DrinksWidget(
                             drink: drink,
                             onChanged: (value) {
-                              // TODO 11: call the selectDrink on the provider
+                              // TODO 11: プロバイダーのselectDrinkメソッドを呼び出す
+                              drinksProvider.selectDrink(drink, value);
                             },
                           ),
                         )

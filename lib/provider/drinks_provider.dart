@@ -24,5 +24,8 @@ class DrinksProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  List<Drink> get selectedDrinks =>
+    _drinks.where((element) => element.selected).toList();
+
   List<Drink> get drinks => _drinks;
 }
